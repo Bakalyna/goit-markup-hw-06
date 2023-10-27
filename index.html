@@ -21,40 +21,126 @@
   </head>
   <body class="body">
     <header class="header">
-      <div class="container header-container">
-        <nav class="header-navigation">
-          <a href="./index.html" class="header-logo"
-            >Web<span class="header-logo-color">Studio</span></a
-          >
-          <ul class="header-list">
-            <li class="header-menu">
-              <a href="./index.html" class="header-menu-link current">Studio</a>
-            </li>
-            <li class="header-menu">
-              <a href="" class="header-menu-link">Portfolio</a>
-            </li>
-            <li class="header-menu">
-              <a href="" class="header-menu-link">Contacts</a>
-            </li>
-          </ul>
-        </nav>
-        <address class="address">
-          <ul class="header-menu-list">
-            <li class="header-menu-item">
+      <div class="header-tab-close">
+        <div class="container header-container">
+          <nav class="header-navigation">
+            <a href="./index.html" class="header-logo"
+              >Web<span class="header-logo-color">Studio</span></a
+            >
+            <ul class="header-list">
+              <li class="header-menu">
+                <a href="./index.html" class="header-menu-link current"
+                  >Studio</a
+                >
+              </li>
+              <li class="header-menu">
+                <a href="" class="header-menu-link">Portfolio</a>
+              </li>
+              <li class="header-menu">
+                <a href="" class="header-menu-link">Contacts</a>
+              </li>
+            </ul>
+          </nav>
+          <address class="address">
+            <ul class="header-menu-list">
+              <li class="header-menu-item">
+                <a
+                  class="header-menu-address"
+                  href="mailto:info@devstudio.com"
+                  target="_blank"
+                  >info@devstudio.com</a
+                >
+              </li>
+              <li class="header-menu-item">
+                <a
+                  class="header-menu-address"
+                  href="tel:+110001111111"
+                  target="_blank"
+                  >+11 (000) 111-11-11</a
+                >
+              </li>
+            </ul>
+          </address>
+        </div>
+      </div>
+      <div class="mob-header-container">
+        <a href="./index.html" class="mob-header-link"
+          >Web<span class="mob-header-logo">Studio</span></a
+        >
+        <button type="button" class="btn-burger-menu" id="is-open-burger">
+          <svg class="mob-btn-icon" width="24" height="24">
+            <use href="./images/icons.svg#icon-heroicons"></use>
+          </svg>
+        </button>
+      </div>
+      <div class="mob-menu" id="burger-is-open">
+        <div class="mob-container">
+          <nav class="mob-navigation">
+            <button type="button" class="burger-btn" id="close-burger-menu">
+              <svg class="modal-btn-icon" width="8" height="8">
+                <use href="./images/icons.svg#icon-close"></use>
+              </svg>
+            </button>
+            <ul class="mob-list">
+              <li class="mob-menu-list">
+                <a href="./index.html" class="mob-menu-link">Studio</a>
+              </li>
+              <li class="mob-menu-list">
+                <a href="" class="mob-menu-link">Portfolio</a>
+              </li>
+              <li class="mob-menu-list">
+                <a href="" class="mob-menu-link">Contacts</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+        <address class="mob-address">
+          <ul class="mob-address-list">
+            <li class="mob-address-item">
               <a
-                class="header-menu-address"
+                class="mob-menu-address"
+                href="tel:+110001111111"
+                target="_blank"
+                >+11 (000) 111-11-11</a
+              >
+            </li>
+            <li class="mob-address-item">
+              <a
+                class="mob-menu-address"
                 href="mailto:info@devstudio.com"
                 target="_blank"
                 >info@devstudio.com</a
               >
             </li>
-            <li class="header-menu-item">
-              <a
-                class="header-menu-address"
-                href="tel:+110001111111"
-                target="_blank"
-                >+11 (000) 111-11-11</a
-              >
+          </ul>
+          <ul class="mob-list-icon">
+            <li class="mob-item-icon">
+              <a href="" class="mob-link-icon">
+                <svg class="mob-icon" width="24" height="24">
+                  <use href="./images/icons.svg#icon-instagram"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="mob-item-icon">
+              <a href="" class="mob-link-icon"
+                ><svg class="mob-icon" width="24" height="24">
+                  <use href="./images/icons.svg#icon-twitter"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="mob-item-icon">
+              <a href="" class="mob-link-icon">
+                <svg class="mob-icon" width="24" height="24">
+                  <use href="./images/icons.svg#icon-facebook"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="mob-item-icon">
+              <a href="" class="mob-link-icon"
+                ><svg class="mob-icon" width="24" height="24">
+                  <use href="./images/icons.svg#icon-linkedin"></use>
+                </svg>
+              </a>
             </li>
           </ul>
         </address>
@@ -62,12 +148,14 @@
     </header>
     <main class="main">
       <section class="hero-list">
-        <div class="container hero-container">
+        <div class="container container-hero">
           <h1 class="hero-title">
             Effective Solutions<br />
             for Your Business
           </h1>
-          <button type="button" class="button">Order Service</button>
+          <button type="button" class="button" id="is-open-modal">
+            Order Service
+          </button>
         </div>
       </section>
       <section class="features">
@@ -125,12 +213,13 @@
           </ul>
         </div>
       </section>
-      <section class="section">
-        <div class="container">
+      <section class="section-team">
+        <div class="container container-team">
           <h2 class="section-title">Our Team</h2>
           <ul class="section-list">
             <li class="section-item">
               <img
+                srcset="./images/img1.jpg 1x, ./images/img1-2x.jpg 2x"
                 src="./images/img1.jpg"
                 alt="photo by Mark Guerrero"
                 width="264"
@@ -173,6 +262,7 @@
             </li>
             <li class="section-item">
               <img
+                srcset="./images/img2.jpg 1x, ./images/img2-2x.jpg 2x"
                 src="./images/img2.jpg"
                 alt="photo by Tom Ford"
                 width="264"
@@ -215,6 +305,7 @@
             </li>
             <li class="section-item">
               <img
+                srcset="./images/img3.jpg 1x, ./images/img3-2x.jpg 2x"
                 src="./images/img3.jpg"
                 alt="photo by Camila Garcia"
                 width="264"
@@ -257,6 +348,7 @@
             </li>
             <li class="section-item">
               <img
+                srcset="./images/img4.jpg 1x, ./images/img4-2x.jpg 2x"
                 src="./images/img4.jpg"
                 alt="photo by Daniel Wilson"
                 width="264"
@@ -306,12 +398,26 @@
           <ul class="features-section-list">
             <li class="features-section-item">
               <div class="features-section-cover-wrap">
-                <img
-                  src="./images/img5.jpg"
-                  alt="Banking page"
-                  width="360"
-                  class="features-img"
-                />
+                <picture>
+                  <source
+                    srcset="./images/img5.jpg 1x, ./images/img5-2x.jpg 2x"
+                    media="(min-width:1158px)"
+                  />
+                  <source
+                    srcset="./images/img5tab.jpg 1x, ./images/img5tab-2x.jpg 2x"
+                    media="(min-width:768px)"
+                  />
+                  <source
+                    srcset="./images/img5mob.jpg 1x, ./images/img5mob-2x.jpg 2x"
+                    media="(min-width:320px)"
+                  />
+                  <img
+                    src="./images/img5tab.jpg"
+                    alt="Banking page"
+                    width="614"
+                    class="features-img"
+                  />
+                </picture>
                 <p class="features-section-cover-text">
                   14 Stylish and User-Friendly App Design Concepts · Task
                   Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App
@@ -325,12 +431,26 @@
             </li>
             <li class="features-section-item">
               <div class="features-section-cover-wrap">
-                <img
-                  src="./images/img6.jpg"
-                  alt="Phone scanner"
-                  width="360"
-                  class="features-img"
-                />
+                <picture>
+                  <source
+                    srcset="./images/img6.jpg 1x, ./images/img6-2x.jpg 2x"
+                    media="(min-width:1158px)"
+                  />
+                  <source
+                    srcset="./images/img6tab.jpg 1x, ./images/img6tab-2x.jpg 2x"
+                    media="(min-width:768px)"
+                  />
+                  <source
+                    srcset="./images/img6mob.jpg 1x, ./images/img6mob-2x.jpg 2x"
+                    media="(min-width:320px)"
+                  />
+                  <img
+                    src="./images/img6tab.jpg"
+                    alt="Phone scanner"
+                    width="614"
+                    class="features-img"
+                  />
+                </picture>
                 <p class="features-section-cover-text">
                   14 Stylish and User-Friendly App Design Concepts · Task
                   Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App
@@ -344,12 +464,26 @@
             </li>
             <li class="features-section-item">
               <div class="features-section-cover-wrap">
-                <img
-                  src="./images/img7.jpg"
-                  alt="Laptop and phone screen"
-                  width="360"
-                  class="features-img"
-                />
+                <picture>
+                  <source
+                    srcset="./images/img7.jpg 1x, ./images/img7-2x.jpg 2x"
+                    media="(min-width:1158px)"
+                  />
+                  <source
+                    srcset="./images/img7tab.jpg 1x, ./images/img7tab-2x.jpg 2x"
+                    media="(min-width:768px)"
+                  />
+                  <source
+                    srcset="./images/img7mob.jpg 1x, ./images/img7mob-2x.jpg 2x"
+                    media="(min-width:320px)"
+                  />
+                  <img
+                    src="./images/img7tab.jpg"
+                    alt="Laptop and phone screen"
+                    width="614"
+                    class="features-img"
+                  />
+                </picture>
                 <p class="features-section-cover-text">
                   14 Stylish and User-Friendly App Design Concepts · Task
                   Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App
@@ -363,12 +497,26 @@
             </li>
             <li class="features-section-item">
               <div class="features-section-cover-wrap">
-                <img
-                  src="./images/img8.jpg"
-                  alt="Taxi car"
-                  width="360"
-                  class="features-img"
-                />
+                <picture>
+                  <source
+                    srcset="./images/img8.jpg 1x, ./images/img8-2x.jpg 2x"
+                    media="(min-width:1158px)"
+                  />
+                  <source
+                    srcset="./images/img8tab.jpg 1x, ./images/img8tab-2x.jpg 2x"
+                    media="(min-width:768px)"
+                  />
+                  <source
+                    srcset="./images/img8mob.jpg 1x, ./images/img8mob-2x.jpg 2x"
+                    media="(min-width:320px)"
+                  />
+                  <img
+                    src="./images/img8tab.jpg"
+                    alt="Taxi car"
+                    width="614"
+                    class="features-img"
+                  />
+                </picture>
                 <p class="features-section-cover-text">
                   14 Stylish and User-Friendly App Design Concepts · Task
                   Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App
@@ -382,12 +530,26 @@
             </li>
             <li class="features-section-item">
               <div class="features-section-cover-wrap">
-                <img
-                  src="./images/img9.jpg"
-                  alt="Screen phone"
-                  width="360"
-                  class="features-img"
-                />
+                <picture>
+                  <source
+                    srcset="./images/img9.jpg 1x, ./images/img9-2x.jpg 2x"
+                    media="(min-width:1158px)"
+                  />
+                  <source
+                    srcset="./images/img9tab.jpg 1x, ./images/img9tab-2x.jpg 2x"
+                    media="(min-width:768px)"
+                  />
+                  <source
+                    srcset="./images/img9mob.jpg 1x, ./images/img9mob-2x.jpg 2x"
+                    media="(min-width:320px)"
+                  />
+                  <img
+                    src="./images/img9tab.jpg"
+                    alt="Screen phone"
+                    width="614"
+                    class="features-img"
+                  />
+                </picture>
                 <p class="features-section-cover-text">
                   14 Stylish and User-Friendly App Design Concepts · Task
                   Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App
@@ -401,12 +563,32 @@
             </li>
             <li class="features-section-item">
               <div class="features-section-cover-wrap">
-                <img
-                  src="./images/img10.jpg"
-                  alt="Girl talking on phone"
-                  width="360"
-                  class="features-img"
-                />
+                <picture>
+                  <source
+                    srcset="./images/img10.jpg 1x, ./images/img10-2x.jpg 2x"
+                    media="(min-width:1158px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/img10tab.jpg    1x,
+                      ./images/img10tab-2x.jpg 2x
+                    "
+                    media="(min-width:768px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/img10mob.jpg    1x,
+                      ./images/img10mob-2x.jpg 2x
+                    "
+                    media="(min-width:320px)"
+                  />
+                  <img
+                    src="./images/img10tab.jpg"
+                    alt="Girl talking on phone"
+                    width="614"
+                    class="features-img"
+                  />
+                </picture>
                 <p class="features-section-cover-text">
                   14 Stylish and User-Friendly App Design Concepts · Task
                   Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App
@@ -486,9 +668,9 @@
         </div>
       </div>
     </footer>
-    <div class="backdrop is-open">
+    <div class="backdrop" id="modal-is-open">
       <div class="modal">
-        <button type="button" class="modal-btn">
+        <button type="button" class="modal-btn" id="close-modal-window">
           <svg class="modal-btn-icon" width="8" height="8">
             <use href="./images/icons.svg#icon-close"></use>
           </svg>
@@ -567,5 +749,6 @@
         </form>
       </div>
     </div>
+    <script src="./js/modal.js"></script>
   </body>
 </html>
