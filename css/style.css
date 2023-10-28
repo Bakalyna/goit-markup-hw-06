@@ -439,12 +439,13 @@ address {
   line-height: 1.1;
   letter-spacing: 0.02em;
   text-align: center;
+  margin-bottom: 8px;
 }
 
 .features-text {
   color: #434455;
   font-size: 16px;
-  font-weight: 400;
+  font-weight: 500;
   line-height: 1.5;
   letter-spacing: 0.02em;
 }
@@ -1044,6 +1045,10 @@ address {
     display: block;
   }
 
+  .header-menu-address {
+  font-size: 12px;
+  }
+
   /* ----------------------SECTION-1--HERO-768----------------------- */
 
   .container {
@@ -1208,7 +1213,7 @@ address {
   .hero-list {
     max-height: 600px;
     padding: 188px 0;
-    max-width: 1440px;
+    max-width: 100%;
     background-image: linear-gradient(
         rgba(46, 47, 66, 0.7),
         rgba(46, 47, 66, 0.7)
@@ -1264,6 +1269,11 @@ address {
     line-height: 1.2;
     letter-spacing: 0.02em;
     margin-bottom: 8px;
+    text-align: left;
+  }
+
+  .features-text {
+    font-weight: 400;
   }
 
   .features-container-icon {
@@ -1326,12 +1336,17 @@ address {
 
   .footer-container-logo {
     margin-right: 120px;
+    margin-bottom: 0;
   }
 
   .footer-text {
     max-width: 264px;
     width: 264px;
     height: 72px;
+  }
+
+  .footer-social-wrap {
+    margin-bottom: 0;
   }
 
   .footer-social-text {
